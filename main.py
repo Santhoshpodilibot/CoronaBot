@@ -17,9 +17,9 @@ API = "https://api.sumanjay.cf/covid/?country="
 START_TEXT = """Hello {},
 I am a simple corona information of a country telegram bot.
 
-Made by @i_am_albin_praveen"""
+Made by @santhu_music_bot"""
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/musicwithalby')]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('😊 ᴏᴡɴᴇʀ 😊', url='https://t.me/santhu_music_bot')]])
 
 
 @Bot.on_message(filters.private & filters.command(["start"]))
@@ -68,7 +68,7 @@ Latitude : `{latitude}`
 Longitude : `{longitude}`
 Recovered : `{recovered}`
 
-Made by @i_am_albin_praveen"""
+Made by @santhu_music_bot"""
         return covid_info
     except Exception as error:
         return error
