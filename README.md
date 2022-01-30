@@ -10,3 +10,7 @@ A corona information telegram bot
 - `BOT_TOKEN` Your bot token from @BotFather
 
 ---
+
+## Deploy to Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Santhoshpodilibot/CoronaBot.git)
+
