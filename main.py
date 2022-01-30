@@ -14,8 +14,9 @@ Bot = Client(
 
 API = "https://api.sumanjay.cf/covid/?country="
 
-START_TEXT = """Hello {},
-I am a simple corona information of a country telegram bot.
+START_TEXT = """Hello {}, "https://te.legra.ph/file/fb1f1cb5395c3075b0fb6.jpg"
+
+ʜɪ ɴᴇɴᴜ ᴄᴏʀᴏɴᴀ ᴜᴘᴅᴀᴛᴇs ʙᴏᴛ ɴɪ ɴɪ ᴄᴏʀᴏɴᴀ ɢᴜʀɪɴᴄʜɪ ᴜᴘᴅᴀᴛᴇs ᴇsᴛʜᴀ.
 
 Made by @santhu_music_bot"""
 
