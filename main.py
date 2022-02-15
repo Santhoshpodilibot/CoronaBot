@@ -57,7 +57,7 @@ def covid_info(country_name):
         latitude = info['latitude']
         longitude = info['longitude']
         recovered = info['recovered']
-        covid_info = f"""--**Covid 19 Information**--
+        covid_info = f"""--**ᴄᴏᴠɪᴅ 𝟷𝟿 ɪɴғᴏʀᴍᴀᴛɪᴏɴ**--
 
 ᴄᴏᴜɴᴛʀʏ : `{country}`
 ᴀᴄᴛɪᴠᴇᴅ : `{active}`
@@ -70,10 +70,6 @@ def covid_info(country_name):
 ʀᴇᴄᴏᴠᴇʀᴇᴅ : `{recovered}`
 
 ᴍᴀᴅᴇ ʙʏ:@santhu_music_bot"""
-
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('◁', url='callback_data='home')]])    
-
-  
         return covid_info
     except Exception as error:
         return error
