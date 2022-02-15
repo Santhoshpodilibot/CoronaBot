@@ -71,7 +71,9 @@ def covid_info(country_name):
 
 ᴍᴀᴅᴇ ʙʏ:@santhu_music_bot"""
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('◁', callback_data='home')]])      
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('◁', url='callback_data='home')]])    
+
+  
         return covid_info
     except Exception as error:
         return error
