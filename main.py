@@ -14,11 +14,11 @@ Bot = Client(
 
 API = "https://api.sumanjay.cf/covid/?country="
 
-START_TEXT = """Hello {}, "https://te.legra.ph/file/fb1f1cb5395c3075b0fb6.jpg"
+START_TEXT = """ʜᴇʟʟᴏ {},
 
-ʜɪ ɴᴇɴᴜ ᴄᴏʀᴏɴᴀ ᴜᴘᴅᴀᴛᴇs ʙᴏᴛ ɴɪ ɴɪ ᴄᴏʀᴏɴᴀ ɢᴜʀɪɴᴄʜɪ ᴜᴘᴅᴀᴛᴇs ᴇsᴛʜᴀ.
+ʜɪ ɴᴇɴᴜ ᴄᴏʀᴏɴᴀ ᴜᴘᴅᴀᴛᴇs ʙᴏᴛ ɴɪ ɴɪ ᴄᴏʀᴏɴᴀ ɢᴜʀɪɴᴄʜɪ ᴜᴘᴅᴀᴛᴇs ᴇsᴛʜᴀ. ᴊᴜsᴛ ᴇᴍɪ ʟᴇᴅʜᴜ ᴍᴇ ᴄᴏᴜɴᴛʀʏ ɴᴀᴍᴇ ᴇɴᴛᴇʀ ᴄʜᴇʏᴀɴᴅɪ ᴄʜᴀʟᴜ..💝
 
-Made by @santhu_music_bot"""
+ᴍᴀᴅᴇ ʙʏ:@santhu_music_bot"""
 
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('😊 ᴏᴡɴᴇʀ 😊', url='https://t.me/santhu_music_bot')]])
 
@@ -59,20 +59,29 @@ def covid_info(country_name):
         recovered = info['recovered']
         covid_info = f"""--**Covid 19 Information**--
 
-Country : `{country}`
-Actived : `{active}`
-Confirmed : `{confirmed}`
-Deaths : `{deaths}`
-ID : `{info_id}`
-Last Update : `{last_update}`
-Latitude : `{latitude}`
-Longitude : `{longitude}`
-Recovered : `{recovered}`
+ᴄᴏᴜɴᴛʀʏ : `{country}`
+ᴀᴄᴛɪᴠᴇᴅ : `{active}`
+ᴄᴏɴғɪʀᴍᴇᴅ : `{confirmed}`
+ᴅᴇᴀᴛʜs : `{deaths}`
+ɪᴅ : `{info_id}`
+ʟᴀsᴛ ᴜᴘᴅᴀᴛᴇ : `{last_update}`
+ʟᴀᴛɪᴛᴜᴅᴇ : `{latitude}`
+ʟᴏɴɢɪᴛᴜᴅᴇ : `{longitude}`
+ʀᴇᴄᴏᴠᴇʀᴇᴅ : `{recovered}`
 
-Made by @santhu_music_bot"""
+ᴍᴀᴅᴇ ʙʏ:@santhu_music_bot"""
+
+
+reply_markup=InlineKeyboardMarkup(
+                                [[
+                                        InlineKeyboardButton(
+                                            "◁", callback_data="help"),
+                                    ]]
+                            ),        
         return covid_info
     except Exception as error:
         return error
+
 
 
 Bot.run()
